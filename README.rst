@@ -40,6 +40,7 @@ Example
 -------
 
 :: 
+
     from django import forms
     from ckeditorfiles.widgets import CKEditorWidget
     from models import Page
