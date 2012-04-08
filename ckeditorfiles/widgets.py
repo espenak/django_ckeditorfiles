@@ -9,10 +9,10 @@ from django import forms
 
 
 class CKEditorWidget(Textarea):
-    config = {}
-    def __init__(self, attrs=None, config=None):
-        if config:
-            self.config = config
+    default_config = {}
+    def __init__(self, attrs=None, config={}):
+        self.config = self.__class__.default_config.copy()
+        self.config.update(config)
         super(CKEditorWidget, self).__init__(attrs)
 
     def render(self, name, value, attrs=None):
