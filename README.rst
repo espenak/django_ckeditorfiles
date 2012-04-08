@@ -71,7 +71,7 @@ attribute::
                           'height': '300px'}
 
 The ``default_config`` class attribute provides defaults that can be overridden
-with ``config`` parameter for __init__, so in the example above, you could
+with ``config`` parameter for __init__, so you could
 override the height-config of ``MyCKEditorWidget`` like this::
 
     widget = MyCKEditorWidget(config={'height': '100px'})
