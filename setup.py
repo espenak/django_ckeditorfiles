@@ -7,5 +7,6 @@ setup(name = 'django_ckeditorfiles',
       author = 'Espen Angell Kristiansen',
       license = 'LGPL',
       packages=find_packages(exclude=['ez_setup']),
+      zip_safe = False,
       install_requires = ['setuptools', 'Django']
 )
