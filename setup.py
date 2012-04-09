@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(name = 'django_ckeditorfiles',
       description = 'CKEditor bundled as a django staticfiles app.',
       version = '1.0',
-      url = 'http://espenak.net',
+      url = 'https://github.com/espenak/django_ckeditorfiles',
       author = 'Espen Angell Kristiansen',
       license = 'LGPL',
       packages=find_packages(exclude=['ez_setup']),
