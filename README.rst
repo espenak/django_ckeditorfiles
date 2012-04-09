@@ -4,6 +4,14 @@ CKEditor bundled as a Django app.
 Install
 =======
 
+::
+
+    $ pip install ckeditorfiles
+
+
+Setup
+=====
+
 Add ``'ckeditorfiles'`` and ``'django.contrib.staticfiles'`` to
 ``INSTALLED_APPS``.
 

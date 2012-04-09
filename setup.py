@@ -8,5 +8,15 @@ setup(name = 'django_ckeditorfiles',
       license = 'LGPL',
       packages=find_packages(exclude=['ez_setup']),
       zip_safe = False,
-      install_requires = ['setuptools', 'Django']
+      include_package_data=True,
+      install_requires = ['setuptools', 'Django'],
+      classifiers=[
+                   'Development Status :: 5 - Production/Stable',
+                   'Environment :: Web Environment',
+                   'Framework :: Django',
+                   'Intended Audience :: Developers',
+                   'License :: OSI Approved',
+                   'Operating System :: OS Independent',
+                   'Programming Language :: Python'
+                  ]
 )
