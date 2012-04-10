@@ -6,7 +6,7 @@ Install
 
 ::
 
-    $ pip install ckeditorfiles
+    $ pip install django_ckeditorfiles
 
 
 Setup
