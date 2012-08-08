@@ -32,6 +32,6 @@ class CKEditorWidget(Textarea):
                                                                        script=script))
 
     def _media(self):
-        js = [settings.STATIC_URL + '/ckeditorfiles/ckeditor.js']
+        js = [settings.STATIC_URL + 'ckeditorfiles/ckeditor.js']
         return forms.Media(js=js)
     media = property(_media)
