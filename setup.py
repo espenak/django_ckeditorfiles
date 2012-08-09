@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(name = 'django_ckeditorfiles',
       description = 'CKEditor bundled as a django staticfiles app.',
-      version = '1.0',
+      version = '1.0.1',
       url = 'https://github.com/espenak/django_ckeditorfiles',
       author = 'Espen Angell Kristiansen',
       license = 'LGPL',
