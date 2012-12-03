@@ -16,6 +16,8 @@ Add ``'ckeditorfiles'`` and ``'django.contrib.staticfiles'`` to
 ``INSTALLED_APPS``.
 
 
+.. _ckeditorjs:
+
 ckeditor.js
 ===========
 
@@ -47,7 +49,7 @@ the ``config`` parameter to the constructor of the widget, encoded as JSON.
 Example
 -------
 
-:: 
+In your ``forms.py`` or wherever you define your forms:: 
 
     from django import forms
     from ckeditorfiles.widgets import CKEditorWidget
@@ -60,7 +62,18 @@ Example
             model = Page
 
 
-The config parameter to CKEditorWidget is the config parameter for
+In the template rendering the form (we assume you name your form ``form`` in the template context)::
+
+    {{ form.media }}
+    {{ form.as_p }}
+
+NOTE: ``form.as_p`` is just an example. The widget also works with
+django-crispy-forms, and ``form.as_ul``. The important part is ``form.media``,
+because the ckeditor javascript will not be loaded without it. Alternatively, you can
+add ckeditor.js manually (see: ckeditorjs_).
+
+
+The config parameter to ``CKEditorWidget`` is the config parameter for
 ``CKEDITOR.replace(...)``. See:
 http://docs.cksource.com/CKEditor_3.x/Developers_Guide/Setting_Configurations.
 
