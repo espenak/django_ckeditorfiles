@@ -83,7 +83,7 @@ add ckeditor.js manually (see: ckeditorjs_).
 
 The config parameter to ``CKEditorWidget`` is the config parameter for
 ``CKEDITOR.replace(...)``. See:
-http://docs.cksource.com/CKEditor_3.x/Developers_Guide/Setting_Configurations.
+http://docs.ckeditor.com/#!/api/CKEDITOR-method-replace.
 
 
 
@@ -106,7 +106,7 @@ Simple toolbar with bold, italic and show source (with show source in its own bo
                     'items': [ 'Source']
                 }]
             })
-        ))
+        )
 
 
 A more complex toolbar, suitable to simple editors, like comments::
@@ -139,9 +139,7 @@ A more complex toolbar, suitable to simple editors, like comments::
                     'items': ['Maximize']
                 }]
             })
-            )
-            
-        ))
+        )
 
 
 The full default toolbar (good as a source of button-names for your own config)::
@@ -228,7 +226,7 @@ The full default toolbar (good as a source of button-names for your own config):
                         {'name': 'about'}
                 ]
             })
-        ))
+        )
 
 
 
