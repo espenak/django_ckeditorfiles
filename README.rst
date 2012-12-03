@@ -16,6 +16,11 @@ Add ``'ckeditorfiles'`` and ``'django.contrib.staticfiles'`` to
 ``INSTALLED_APPS``.
 
 
+CKEditor version
+================
+See ``static/ckeditorfiles/CHANGES.md``.
+
+
 .. _ckeditorjs:
 
 ckeditor.js
