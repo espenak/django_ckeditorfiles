@@ -1,6 +1,6 @@
 import json
 from django.conf import settings
-from django.forms.util import flatatt
+from django.forms.utils import flatatt
 from django.forms.widgets import Textarea
 from django.utils.safestring import mark_safe
 from django.utils.html import conditional_escape
